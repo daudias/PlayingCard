@@ -82,7 +82,7 @@ class PlayingCardView: UIView {
             }
         } else {
             if let backImage = UIImage(named: "K♥") {
-                backImage.draw(in: bounds)
+                backImage.draw(in: bounds.zoom(by: faceCardScale))
             }
         }
     }
